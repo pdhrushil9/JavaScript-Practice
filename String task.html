@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<body>
+
+    <script>
+
+        function checkSpam(str) {
+        let lowerStr = str.toLowerCase()
+
+        return lowerStr.includes('Dhrushil') || lowerStr.includes('patel')
+        }
+
+        alert( checkSpam('Dhrushil') )
+
+        alert( checkSpam('patel') )
+
+        alert( checkSpam("Dhrushil patel") )
+
+    </script>
+
+</body>
+
+</html>
