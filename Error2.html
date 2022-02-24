@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<body>
+
+    <script>
+
+    function test() 
+    {
+    try 
+    {
+        alert('start');
+        throw new Error("an error");
+    } 
+        catch (err) 
+    {
+        
+        if("can't handle the error") 
+        {
+        throw err;
+        }
+
+    }  
+        finally 
+    {
+        alert('cleanup!')
+    }
+    }
+
+    test();
+
+    </script>
+
+</body>
+
+</html>
